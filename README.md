@@ -204,9 +204,3 @@ Quick checklist to get this running and logging IPs:
 3. Add `RequestLoggingMiddleware` or change `IPTestController` to use `ILogger<T>` as shown above.
 4. If behind a proxy, add `UseForwardedHeaders()` and configure `ForwardedHeadersOptions`.
 5. `dotnet run --urls "http://localhost:5000"` and test with `curl http://localhost:5000/api/test/verify`
-
-If you want, I can:
-- Make the `ILogger` substitution in `Controllers/IPTestController.cs` for you and adjust the default log path to a cross-platform location.
-- Add the middleware file and register it in `Program.cs`.
-
--- End
